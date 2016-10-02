@@ -29,16 +29,38 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
+    public void testMultiplyAlwaysPass() {
         App app = new App();
         for (int i = 0; i < 10; ++i) {
-            int a = ThreadLocalRandom.current().nextInt(0, 200);
-            int b = ThreadLocalRandom.current().nextInt(0, 200);
-            System.out.println(a + " * " + b + " = " + app.multiple(a, b));
+            int a = ThreadLocalRandom.current().nextInt(0, 100);
+            int b = ThreadLocalRandom.current().nextInt(0, 100);
+            int prod = app.multiply(a, b);
+            System.out.println(prod);
+            assertTrue(prod < 10000);
+        }
+    }
+
+    public void testMultiplyAlwaysFail() {
+        App app = new App();
+        for (int i = 0; i < 10; ++i) {
+            int a = ThreadLocalRandom.current().nextInt(0, 100);
+            int b = ThreadLocalRandom.current().nextInt(0, 100);
+            int prod = app.multiply(a, b);
+            int threshold = 0;
+            System.out.println(prod);
+            assertTrue(prod < threshold);
+        }
+    }
+
+    public void testMultiplyRandomFail() {
+        App app = new App();
+        for (int i = 0; i < 10; ++i) {
+            int a = ThreadLocalRandom.current().nextInt(0, 100);
+            int b = ThreadLocalRandom.current().nextInt(0, 100);
+            int prod = app.multiply(a, b);
+            int threshold = ThreadLocalRandom.current().nextInt(5000, 10000);
+            System.out.println(prod);
+            assertTrue(prod < threshold);
         }
     }
 }
