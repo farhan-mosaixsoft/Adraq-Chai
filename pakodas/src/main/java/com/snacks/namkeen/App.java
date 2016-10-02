@@ -11,9 +11,7 @@ public class App
         System.out.println( "Hello World!" );
     }
 
-    public int multiple(int a, int b) {
-        assert((a < 100) && (b < 100));
-
+    public int multiply(int a, int b) {
         return a * b;
     }
 }
