@@ -12,6 +12,7 @@
   </modules>
   
   <name>pakodas-project</name>
+  <packaging>pom</packaging>
   <url>http://maven.apache.org</url>
 
   <properties>
