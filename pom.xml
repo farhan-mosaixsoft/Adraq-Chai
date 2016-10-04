@@ -4,11 +4,8 @@
 
   <artifactId>Pakodas-with-Adraq-Chai</artifactId>
 
-  <parent>
-    <groupId>com.snacks.namkeen</groupId>
-    <artifactId>pakodas</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
+  <groupId>com.snacks.namkeen</groupId>
+  <version>1.0-SNAPSHOT</version>
   
   <modules>
         <module>pakodas</module>
