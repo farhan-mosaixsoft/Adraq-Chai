@@ -8,7 +8,6 @@
     <groupId>com.snacks.namkeen</groupId>
     <artifactId>pakodas</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <relativePath>..</relativePath>
   </parent>
   
   <modules>
