@@ -46,7 +46,7 @@ public class AppTest
             int a = ThreadLocalRandom.current().nextInt(0, 100);
             int b = ThreadLocalRandom.current().nextInt(0, 100);
             int prod = app.multiply(a, b);
-            int threshold = 0;
+            int threshold = 10000;
             System.out.println(prod);
             assertTrue(prod < threshold);
         }
