@@ -12,6 +12,11 @@ public class App
     }
 
     public int multiply(int a, int b) {
-        return a * b
+        return a * b;
+    }
+    
+    public int eatWithSamosas() {
+        Chilli chilli = new Chilli();
+        return chilli.getChillies();
     }
 }

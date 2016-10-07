@@ -40,13 +40,14 @@ public class AppTest
         }
     }
 
+    /*
     public void testMultiplyAlwaysFail() {
         App app = new App();
         for (int i = 0; i < 10; ++i) {
             int a = ThreadLocalRandom.current().nextInt(0, 100);
             int b = ThreadLocalRandom.current().nextInt(0, 100);
             int prod = app.multiply(a, b);
-            int threshold = 10000;
+            int threshold = 0;
             System.out.println(prod);
             assertTrue(prod < threshold);
         }
@@ -62,5 +63,12 @@ public class AppTest
             System.out.println(prod);
             assertTrue(prod < threshold);
         }
+    }
+    */
+    
+    public void testDependencies() {
+        App app = new App();
+        System.out.println(app.eatWithSamosas());
+        assertTrue(true);
     }
 }
