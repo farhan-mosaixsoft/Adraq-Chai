@@ -28,7 +28,7 @@
       <uniqueVersion>false</uniqueVersion>
       <id>repo1</id>
       <name>Corporate Repository</name>
-      <url>scp://10.50.50.74/repo1</url>
+      <url>scp://10.50.50.73/repo1</url>
       <layout>default</layout>
     </repository>
     </distributionManagement>
