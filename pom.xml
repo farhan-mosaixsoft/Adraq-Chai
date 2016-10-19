@@ -3,7 +3,7 @@
 
 
     <groupId>com.snacks.namkeen</groupId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.4</version>
     <artifactId>Pakodas-with-Adraq-Chai</artifactId>
     <packaging>pom</packaging>
     <name>pakodas-project</name>
@@ -13,7 +13,7 @@
         <url>https://github.com/farhan-mosaixsoft/Adraq-Chai</url>
         <connection>scm:git:https://github.com/farhan-mosaixsoft/Adraq-Chai.git</connection>
         <developerConnection>scm:git:git@github.com:farhan-mosaixsoft/Adraq-Chai.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>Pakodas-with-Adraq-Chai-1.4</tag>
   </scm>
 
 
