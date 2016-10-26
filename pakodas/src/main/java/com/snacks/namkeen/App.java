@@ -4,6 +4,14 @@ package com.snacks.namkeen;
  * Hello world!
  *
  */
+
+/**
+* MosaixCloud configuration class
+*
+* @throws InvalidConfiguration
+* @throws UnsupportedCloud
+* @throws IOException
+*/
 public class App 
 {
     public static void main( String[] args )
