@@ -3,7 +3,7 @@
 
 
     <groupId>com.snacks.namkeen</groupId>
-    <version>1.4</version>
+    <version>1.4-SNAPSHOT</version>
     <artifactId>Pakodas-with-Adraq-Chai</artifactId>
     <packaging>pom</packaging>
     <name>pakodas-project</name>
