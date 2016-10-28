@@ -42,6 +42,7 @@
                 <configuration>
                     <useReleaseProfile>false</useReleaseProfile>
                     <goals>deploy</goals>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
       		<dependencies>
         	    <dependency>
@@ -57,13 +58,14 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
             </plugin>
-            -->
         <plugin>
           <groupId>se.jiderhamn</groupId>
           <artifactId>promote-maven-plugin</artifactId>
           <version>2.0.0</version>
           <!-- Automatically execute promote:make-promotable after each snapshot build -->
-          <executions>
+            <!--                 
+
+            <executions>
             <execution>
               <goals>
                 <goal>make-promotable</goal>
@@ -82,7 +84,9 @@
             <configuration>
                 <tag>${project.artifactId}-${project.version}</tag>
             </configuration>
-          </plugin>            
+          </plugin>  
+         -->
+
         </plugins>
         <!-- </pluginManagement> -->
     </build>
