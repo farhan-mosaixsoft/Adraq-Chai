@@ -43,6 +43,7 @@
                     <useReleaseProfile>false</useReleaseProfile>
                     <goals>deploy</goals>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <scmCommentPrefix>#42${line.separator}</scmCommentPrefix>
                 </configuration>
       		<dependencies>
         	    <dependency>
