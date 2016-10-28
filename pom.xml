@@ -42,7 +42,7 @@
                     <useReleaseProfile>false</useReleaseProfile>
                     <goals>deploy</goals>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <scmCommentPrefix>@{project.version}</scmCommentPrefix>
+                    <scmCommentPrefix>${project.version}</scmCommentPrefix>
                 </configuration>
       		<dependencies>
         	    <dependency>
