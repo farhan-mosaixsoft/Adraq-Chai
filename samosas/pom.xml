@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.snacks.namkeen</groupId>
         <artifactId>Pakodas-with-Adraq-Chai</artifactId>
-        <version>4.23</version>
+        <version>4.24-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
 
