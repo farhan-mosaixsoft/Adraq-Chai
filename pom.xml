@@ -19,7 +19,6 @@
 
     <modules>
         <module>pakodas</module>
-        <module>samosas</module>
     </modules>
          
     <distributionManagement>
