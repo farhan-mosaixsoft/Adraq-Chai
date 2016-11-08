@@ -61,18 +61,16 @@
     </dependencies>
   </dependencyManagement>
 
-  <distributionManagement>
+    <distributionManagement>
     <repository>
-      <id>deployment</id>
-      <name>MosaixSoft release repository</name>
-      <url>http://repo.mosaix.com/content/repositories/releases</url>
+      <uniqueVersion>false</uniqueVersion>
+      <id>repo1</id>
+      <name>Corporate Repository</name>
+      <url>file://10.50.50.73/repo1</url>
+      <layout>default</layout>
     </repository>
-    <snapshotRepository>
-      <id>deployment</id>
-      <name>MosaixSoft snapshot repository</name>
-      <url>http://repo.mosaix.com/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
+    </distributionManagement>  
+  
 
   <build>
     <pluginManagement>
@@ -116,5 +114,5 @@
       </plugins>
     </pluginManagement>
   </build>
-
+  
 </project>
