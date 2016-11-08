@@ -9,7 +9,7 @@
   <name>samosas</name>
   <url>http://maven.apache.org</url>
   <version>4.22-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
 
   <inceptionYear>2016</inceptionYear>
   <organization>
