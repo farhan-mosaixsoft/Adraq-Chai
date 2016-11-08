@@ -32,14 +32,8 @@
   </scm>
 
   <properties>
-    <failOnMissingWebXml>false</failOnMissingWebXml>
-    <junit.version>4.12</junit.version>
-    <logback.version>1.1.7</logback.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <surefire.version>2.19.1</surefire.version>
-    <tomcat.version>8.0.30</tomcat.version>
   </properties>
 
   <dependencyManagement>
