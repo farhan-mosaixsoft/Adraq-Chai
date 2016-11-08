@@ -38,12 +38,8 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <slf4j.version>1.7.21</slf4j.version>
     <surefire.version>2.19.1</surefire.version>
     <tomcat.version>8.0.30</tomcat.version>
-    <!-- MosaixSoft dependencies -->
-    <mkg.version>3.5.0</mkg.version>
-    <serviceresolver.version>3.1.3</serviceresolver.version>
   </properties>
 
   <dependencyManagement>
@@ -61,46 +57,7 @@
         <version>2.0.0</version>
         <optional>true</optional>
       </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>${slf4j.version}</version>
-        <optional>true</optional>
-      </dependency>
-      <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>${logback.version}</version>
-        <optional>true</optional>
-      </dependency>
-      <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-core</artifactId>
-        <version>${logback.version}</version>
-        <optional>true</optional>
-      </dependency>
       <!-- Test dependencies -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-nop</artifactId>
-        <version>${slf4j.version}</version>
-        <optional>true</optional>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>${slf4j.version}</version>
-        <optional>true</optional>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-        <optional>true</optional>
-        <scope>test</scope>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
