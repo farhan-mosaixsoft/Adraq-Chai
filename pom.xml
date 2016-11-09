@@ -1,60 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <modelVersion>4.0.0</modelVersion>
 
- <groupId>com.snacks.namkeen</groupId>
-  <artifactId>samosas</artifactId>
-  <name>samosas</name>
-  <version>4.34-SNAPSHOT</version>
-  <url>http://maven.apache.org</url>
-  <packaging>jar</packaging>
+    <groupId>com.snacks.namkeen</groupId>
+    <version>4.24.4-SNAPSHOT</version>
+    <artifactId>Pakodas-with-Adraq-Chai</artifactId>
+    <packaging>pom</packaging>
+    <name>pakodas-project</name>
+    <url>http://maven.apache.org</url>
 
-  <scm>
-    <url>https://github.com/farhan-mosaixsoft/Adraq-Chai/</url>
-    <connection>scm:git:https://github.com/farhan-mosaixsoft/Adraq-Chai.git</connection>
-    <developerConnection>scm:git:git@github.com:farhan-mosaixsoft/Adraq-Chai.git</developerConnection>
-    <tag>HEAD</tag>
+    <scm>
+        <url>https://github.com/farhan-mosaixsoft/Adraq-Chai</url>
+        <connection>scm:git:https://github.com/farhan-mosaixsoft/Adraq-Chai.git</connection>
+        <developerConnection>scm:git:git@github.com:farhan-mosaixsoft/Adraq-Chai.git</developerConnection>
+    <tag>v4.13</tag>
   </scm>
 
-  <inceptionYear>2016</inceptionYear>
-  <organization>
-    <name>MosaixSoft, Inc.</name>
-    <url>http://www.mosaixsoft.com/</url>
-  </organization>
 
-  <developers>
-    <developer>
-      <name>Farhan Patwa</name>
-      <email>farhan@mosaixsoft.com</email>
-      <timezone>America/Los_Angeles</timezone>
-    </developer>
-  </developers>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <!-- Third Party dependencies -->
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-        <scope>test</scope>
-      </dependency>      
-      <dependency>
-        <groupId>org.eclipse.jdt</groupId>
-        <artifactId>org.eclipse.jdt.annotation</artifactId>
-        <version>2.0.0</version>
-        <optional>true</optional>
-      </dependency>
-      <!-- Test dependencies -->
-    </dependencies>
-  </dependencyManagement>
-
+    <modules>
+        <module>pakodas</module>
+        <module>samosas</module>
+    </modules>
+         
     <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
@@ -63,7 +30,7 @@
       <url>file://10.50.50.73/repo1</url>
       <layout>default</layout>
     </repository>
-    </distributionManagement>  
+    </distributionManagement>
 
     <build>
         <!--<pluginManagement> -->
@@ -71,33 +38,63 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
-                <executions>
-                  <execution>
-                    <id>default</id>
-                    <goals>
-                      <goal>prepare</goal>
-                    </goals>
-                    <configuration>
-                      <pomFileName>samosas/pom.xml</pomFileName>
-                    </configuration>
-                  </execution>
-                </executions>
+                <version>2.3.2</version>
                 <configuration>
                     <useReleaseProfile>false</useReleaseProfile>
                     <goals>deploy</goals>
+                    <!-- <tagNameFormat>v@{project.version}</tagNameFormat> -->
+                    <!-- <scmCommentPrefix>[${project.version}]</scmCommentPrefix> -->
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-gitexe</artifactId>
-                        <version>1.8.1</version>
-                    </dependency>
-                </dependencies>
+      		<dependencies>
+        	    <dependency>
+          	        <groupId>org.apache.maven.scm</groupId>
+              	        <artifactId>maven-scm-provider-gitexe</artifactId>
+          	        <version>1.8.1</version>
+        	    </dependency>
+       		</dependencies>
+            </plugin>            
+            <!--                 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
             </plugin>
-       </plugins>
+        <plugin>
+          <groupId>se.jiderhamn</groupId>
+          <artifactId>promote-maven-plugin</artifactId>
+          <version>2.0.0</version>
+          -->
+          <!-- Automatically execute promote:make-promotable after each snapshot build -->
+            <!--                 
+            <executions>
+            <execution>
+              <goals>
+                <goal>make-promotable</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>versions-maven-plugin</artifactId>
+            <version>2.1</version>
+          </plugin>
+          <plugin>
+            <artifactId>maven-scm-plugin</artifactId>
+            <version>1.8.1</version>
+            <configuration>
+                <tag>${project.artifactId}-${project.version}</tag>
+            </configuration>
+          </plugin>  
+         -->
+        </plugins>
         <!-- </pluginManagement> -->
     </build>
-  
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
 </project>
