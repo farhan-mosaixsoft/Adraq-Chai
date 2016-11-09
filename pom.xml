@@ -18,7 +18,7 @@
 
 
     <modules>
-        <module>pakodas</module>
+        <module>samosas</module>
     </modules>
          
     <distributionManagement>
@@ -52,59 +52,7 @@
         	    </dependency>
        		</dependencies>
             </plugin>            
-            <!--                 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
-            </plugin>
-        <plugin>
-          <groupId>se.jiderhamn</groupId>
-          <artifactId>promote-maven-plugin</artifactId>
-          <version>2.0.0</version>
-          -->
-          <!-- Automatically execute promote:make-promotable after each snapshot build -->
-            <!--                 
-            <executions>
-            <execution>
-              <goals>
-                <goal>make-promotable</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>versions-maven-plugin</artifactId>
-            <version>2.1</version>
-          </plugin>
-          <plugin>
-            <artifactId>maven-scm-plugin</artifactId>
-            <version>1.8.1</version>
-            <configuration>
-                <tag>${project.artifactId}-${project.version}</tag>
-            </configuration>
-          </plugin>  
-         -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.0</version>
-                <configuration>
-                    <useReleaseProfile>false</useReleaseProfile>
-                    <goals>deploy</goals>
-                    <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <!-- <scmCommentPrefix>[${project.version}]</scmCommentPrefix> -->
-                </configuration>
-      		<dependencies>
-        	    <dependency>
-          	        <groupId>org.apache.maven.scm</groupId>
-              	        <artifactId>maven-scm-provider-gitexe</artifactId>
-          	        <version>1.8.2</version>
-        	    </dependency>
-       		</dependencies>
-            </plugin>            
-        </plugins>
+       </plugins>
         <!-- </pluginManagement> -->
     </build>
     
