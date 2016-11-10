@@ -24,7 +24,8 @@ public class App
     }
     
     public int eatWithSamosas() {
-        Chilli chilli = new Chilli();
-        return chilli.getChillies();
+        //Chilli chilli = new Chilli();
+        //return chilli.getChillies();
+	return 10;
     }
 }
