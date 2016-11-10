@@ -3,13 +3,13 @@
 
   <parent>
     <groupId>com.snacks.namkeen</groupId>
- <version>4.36</version>
+ <version>4.37-SNAPSHOT</version>
     <artifactId>Pakodas-with-Adraq-Chai</artifactId>
     <relativePath>..</relativePath>
   </parent>
 
   <artifactId>pakodas</artifactId>
-  <version>4.36</version>
+  <version>4.37-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>pakodas</name>
   <url>http://maven.apache.org</url>
