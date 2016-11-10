@@ -1,18 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
     <groupId>com.snacks.namkeen</groupId>
-    <version>4.41-SNAPSHOT</version>
+     <version>4.40-SNAPSHOT</version>
     <artifactId>Pakodas-with-Adraq-Chai</artifactId>
     <packaging>pom</packaging>
-    <name>Adraq-Chai-project</name>
+    <name>pakodas-project</name>
     <url>http://maven.apache.org</url>
 
     <scm>
         <url>https://github.com/farhan-mosaixsoft/Adraq-Chai</url>
         <connection>scm:git:https://github.com/farhan-mosaixsoft/Adraq-Chai.git</connection>
         <developerConnection>scm:git:git@github.com:farhan-mosaixsoft/Adraq-Chai.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
+
 
     <modules>
         <module>pakodas</module>
@@ -50,7 +53,43 @@
         	    </dependency>
        		</dependencies>
             </plugin>            
-   </build>
+            <!--                 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        <plugin>
+          <groupId>se.jiderhamn</groupId>
+          <artifactId>promote-maven-plugin</artifactId>
+          <version>2.0.0</version>
+          -->
+          <!-- Automatically execute promote:make-promotable after each snapshot build -->
+            <!--                 
+            <executions>
+            <execution>
+              <goals>
+                <goal>make-promotable</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>versions-maven-plugin</artifactId>
+            <version>2.1</version>
+          </plugin>
+          <plugin>
+            <artifactId>maven-scm-plugin</artifactId>
+            <version>1.8.1</version>
+            <configuration>
+                <tag>${project.artifactId}-${project.version}</tag>
+            </configuration>
+          </plugin>  
+         -->
+        </plugins>
+        <!-- </pluginManagement> -->
+    </build>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
