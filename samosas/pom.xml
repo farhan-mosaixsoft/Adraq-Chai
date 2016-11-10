@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.snacks.namkeen</groupId>
     <artifactId>Pakodas-with-Adraq-Chai</artifactId>
-    <version>4.35</version>
+    <version>4.36-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
 
@@ -19,7 +19,7 @@
     <url>https://github.com/farhan-mosaixsoft/Adraq-Chai/</url>
     <connection>scm:git:https://github.com/farhan-mosaixsoft/Adraq-Chai.git</connection>
     <developerConnection>scm:git:git@github.com:farhan-mosaixsoft/Adraq-Chai.git</developerConnection>
-    <tag>v4.35-samosas</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <inceptionYear>2016</inceptionYear>
