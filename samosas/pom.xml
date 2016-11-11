@@ -4,9 +4,9 @@
 
   <parent>
     <groupId>com.snacks.namkeen</groupId>
-    <version>4.53-SNAPSHOT</version>
-    <artifactId>Pakodas-with-Adraq-Chai</artifactId>
-    <relativePath>..</relativePath>
+    <version>4.0.0-SNAPSHOT</version>
+    <artifactId>AD-Chai</artifactId>
+    <relativePath>../pom-AD.xml</relativePath>
   </parent>
 
 
