@@ -4,17 +4,21 @@
 
   <parent>
     <groupId>com.snacks.namkeen</groupId>
-    <version>4.0.1-SNAPSHOT</version>
-    <artifactId>AD-Chai</artifactId>
-    <relativePath>../pom-AD.xml</relativePath>
+    <version>4.0.0-SNAPSHOT</version>
+    <artifactId>Adraq-Chai</artifactId>
+    <relativePath>..</relativePath>
   </parent>
 
 
   <artifactId>samosas</artifactId>
-  <version>4.56-SNAPSHOT</version>
+  <version>4.0.0-SNAPSHOT</version>
   <name>samosas</name>
   <url>http://maven.apache.org</url>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
+
+  <modules>
+        <module>pakodas</module>
+  </modules>
 
   <scm>
     <url>https://github.com/farhan-mosaixsoft/Adraq-Chai/</url>
