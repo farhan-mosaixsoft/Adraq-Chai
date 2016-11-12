@@ -55,8 +55,8 @@
     </repository>
     </distributionManagement>  
 
+<!--
     <build>
-        <!--<pluginManagement> -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -75,8 +75,8 @@
                 </dependencies>
             </plugin>
        </plugins>
-        <!-- </pluginManagement> -->
     </build>
+-->
 
    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
