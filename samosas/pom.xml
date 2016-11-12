@@ -2,15 +2,8 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>com.snacks.namkeen</groupId>
-    <version>4.0.0-SNAPSHOT</version>
-    <artifactId>Adraq-Chai</artifactId>
-    <relativePath>..</relativePath>
-  </parent>
-
-
   <artifactId>samosas</artifactId>
+  <groupId>com.snacks.namkeen</groupId>
   <version>4.0.0-SNAPSHOT</version>
   <name>samosas</name>
   <url>http://maven.apache.org</url>
