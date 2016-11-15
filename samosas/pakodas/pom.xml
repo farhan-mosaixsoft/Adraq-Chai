@@ -3,7 +3,7 @@
 
   <parent>
     <groupId>com.snacks.namkeen</groupId>
-    <version>4..13</version>
+    <version>4.1.13-SNAPSHOT</version>
     <artifactId>samosas</artifactId>
     <relativePath>..</relativePath>
   </parent>
