@@ -4,7 +4,7 @@
 
   <artifactId>samosas</artifactId>
   <groupId>com.snacks.namkeen</groupId>
-  <version>4.1.27-SNAPSHOT</version>
+  <version>4.1.27</version>
   <name>samosas</name>
   <url>http://maven.apache.org</url>
   <packaging>pom</packaging>
@@ -17,7 +17,7 @@
     <url>https://github.com/farhan-mosaixsoft/Adraq-Chai/</url>
     <connection>scm:git:https://github.com/farhan-mosaixsoft/Adraq-Chai.git</connection>
     <developerConnection>scm:git:git@github.com:farhan-mosaixsoft/Adraq-Chai.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v4.1.27-samosas</tag>
   </scm>
 
   <inceptionYear>2016</inceptionYear>
