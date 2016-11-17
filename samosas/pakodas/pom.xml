@@ -3,13 +3,13 @@
 
   <parent>
     <groupId>com.snacks.namkeen</groupId>
-    <version>4.1.28</version>
+    <version>4.1.29-SNAPSHOT</version>
     <artifactId>samosas</artifactId>
     <relativePath>..</relativePath>
   </parent>
 
   <artifactId>pakodas</artifactId>
-  <version>4.1.28</version>
+  <version>4.1.29-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>pakodas</name>
   <url>http://maven.apache.org</url>
